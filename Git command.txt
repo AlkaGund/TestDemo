@@ -1,0 +1,17 @@
+1.  git config --global user.name alka
+2.  git config --global user.email "gundalka12@gmail.com"
+3.  git init
+4.  git add .
+5.  git commit -m "initial commit"
+6.  git status 
+
+Note :-Line No 7,8,9 use when adding project using private mode and for that need to create sshkey 
+
+7.  ssh-keygen -t rsa -b 4096 -C "gundalka12@gmail.com"(for key gernetion it is optional)
+8.  git status  (for checking status it is optional)
+9.  cat sshkey.pub (optional)
+10. git remote add origin git@github.com:AlkaGund/TestProject.git// ssh not working then use http key 
+    (========== Either =============)
+    10. git remote add origin https://github.com/AlkaGund/TestProject.git
+
+11. git push origin master
